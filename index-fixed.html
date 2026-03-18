@@ -1,0 +1,852 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="SCL Contracts Pvt Ltd — Specialty construction services including facade renovation, waterproofing, design-build, roofing and more. Subsidiary of Siddhika Coatings Limited." />
+  <title>SCL Contracts Pvt Ltd | Building the Future, Today</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800;900&family=Rajdhani:wght@300;400;500;600;700&family=Share+Tech+Mono&display=swap" rel="stylesheet" />
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="css/main.css" />
+
+  <style>
+    .no-scroll { overflow: hidden; }
+    /* Inline SVG icons used across the page */
+    svg { vertical-align: middle; }
+  </style>
+</head>
+<body class="no-scroll">
+
+<!-- ═══════════════════════════════════════════════════════════
+     CUSTOM CURSOR
+════════════════════════════════════════════════════════════ -->
+<div id="cursor-dot"  class="cursor-dot"  aria-hidden="true"></div>
+<div id="cursor-ring" class="cursor-ring" aria-hidden="true"></div>
+
+<!-- ═══════════════════════════════════════════════════════════
+     LOADER
+════════════════════════════════════════════════════════════ -->
+<div id="loader" role="progressbar" aria-label="Loading SCL Contracts">
+  <div class="grid-bg" style="position:absolute;inset:0;pointer-events:none;opacity:.2;"></div>
+  <div class="loader-ring"></div>
+  <div class="loader-logo">SCL</div>
+  <div class="loader-sub">Contracts Pvt Ltd</div>
+  <div class="loader-bar-wrap">
+    <div class="loader-bar-labels">
+      <span>Initialising</span>
+      <span id="loader-pct">0%</span>
+    </div>
+    <div class="loader-bar-track">
+      <div class="loader-bar-fill" id="loader-fill"></div>
+    </div>
+  </div>
+  <div class="loader-tagline">Building the Future, Today</div>
+</div>
+
+<!-- ═══════════════════════════════════════════════════════════
+     NAVBAR
+════════════════════════════════════════════════════════════ -->
+<header id="navbar">
+  <div class="container nav-inner">
+    <!-- Logo -->
+    <div class="nav-logo" data-scroll="hero" style="cursor:none;">
+      <div class="nav-logo-mark">
+        <div class="diamond"></div>
+        <div class="inner"></div>
+        <div class="letters">SCL</div>
+      </div>
+      <div class="nav-logo-text">
+        <div class="t1">CONTRACTS</div>
+        <div class="t2">PVT LTD</div>
+      </div>
+    </div>
+
+    <!-- Desktop links -->
+    <nav class="nav-links">
+      <a class="nav-link" data-section="hero"      data-scroll="hero"      href="#">Home</a>
+      <a class="nav-link" data-section="about"     data-scroll="about"     href="#">About</a>
+      <a class="nav-link" data-section="services"  data-scroll="services"  href="#">Services</a>
+      <a class="nav-link" data-section="projects"  data-scroll="projects"  href="#">Projects</a>
+      <a class="nav-link" data-section="estimator" data-scroll="estimator" href="#">Estimate</a>
+      <a class="nav-link" data-section="contact"   data-scroll="contact"   href="#">Contact</a>
+    </nav>
+
+    <!-- CTA + Hamburger -->
+    <div class="nav-cta">
+      <button class="btn-primary" data-scroll="contact" style="padding:10px 20px;font-size:.65rem;">Get Quote</button>
+    </div>
+    <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+
+  <!-- Mobile menu -->
+  <div id="mobile-menu" class="mobile-menu">
+    <a class="nav-link" data-scroll="hero"      href="#">Home</a>
+    <a class="nav-link" data-scroll="about"     href="#">About</a>
+    <a class="nav-link" data-scroll="services"  href="#">Services</a>
+    <a class="nav-link" data-scroll="projects"  href="#">Projects</a>
+    <a class="nav-link" data-scroll="estimator" href="#">Estimate</a>
+    <a class="nav-link" data-scroll="contact"   href="#">Contact</a>
+  </div>
+</header>
+
+<!-- ═══════════════════════════════════════════════════════════
+     HERO
+════════════════════════════════════════════════════════════ -->
+<section id="hero">
+  <!-- Background layers -->
+  <div class="hero-grid-overlay grid-bg"></div>
+  <div class="hero-ring hero-ring-1"></div>
+  <div class="hero-ring hero-ring-2"></div>
+  <div class="scanline"></div>
+
+  <!-- Floating particles (JS generates more, CSS handles a few) -->
+  <div class="particle" style="left:8%;top:20%;width:3px;height:3px;background:#00D4FF;box-shadow:0 0 10px #00D4FF;animation-delay:0s;animation-duration:7s;"></div>
+  <div class="particle" style="left:90%;top:15%;width:2px;height:2px;background:#FF6B00;box-shadow:0 0 8px #FF6B00;animation-delay:1.5s;animation-duration:5s;"></div>
+  <div class="particle" style="left:75%;top:55%;width:2px;height:2px;background:#00D4FF;box-shadow:0 0 8px #00D4FF;animation-delay:2.8s;animation-duration:8s;"></div>
+  <div class="particle" style="left:20%;top:70%;width:4px;height:4px;background:#00FFE0;box-shadow:0 0 12px #00FFE0;animation-delay:.8s;animation-duration:6s;"></div>
+  <div class="particle" style="left:55%;top:10%;width:2px;height:2px;background:#FF6B00;box-shadow:0 0 8px #FF6B00;animation-delay:3.5s;animation-duration:9s;"></div>
+
+  <!-- Content -->
+  <div class="hero-content" id="hero-content">
+    <!-- Chip -->
+    <div class="hero-chip">
+      <div class="hero-chip-dot"></div>
+      <span class="hero-chip-text">Siddhika Group · NSE SME Listed · Pan-India</span>
+    </div>
+
+    <!-- Eyebrow -->
+    <p class="hero-eyebrow">SCL Contracts Pvt Ltd</p>
+
+    <!-- Headline -->
+    <h1 class="hero-h1">
+      <span class="line1">BUILDING</span>
+      <span class="line2 neon-text">THE FUTURE,</span>
+      <span class="line3">TODAY</span>
+    </h1>
+
+    <!-- Typed sub -->
+    <p class="hero-sub">
+      <span id="typed-text"></span><span class="typed-cursor">|</span>
+    </p>
+
+    <!-- Stats -->
+    <div class="hero-stats">
+      <div class="hero-stat">
+        <div class="hero-stat-val">20+</div>
+        <div class="hero-stat-label">Years</div>
+      </div>
+      <div class="hero-stat">
+        <div class="hero-stat-val">5M+</div>
+        <div class="hero-stat-label">Sq.ft / Year</div>
+      </div>
+      <div class="hero-stat">
+        <div class="hero-stat-val">6</div>
+        <div class="hero-stat-label">Offices</div>
+      </div>
+      <div class="hero-stat">
+        <div class="hero-stat-val">100+</div>
+        <div class="hero-stat-label">Professionals</div>
+      </div>
+    </div>
+
+    <!-- CTAs -->
+    <div class="hero-btns">
+      <button class="btn-primary" data-scroll="projects">
+        View Projects
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+      </button>
+      <button class="btn-secondary" data-scroll="contact">
+        Contact Us
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z"/></svg>
+      </button>
+    </div>
+  </div>
+
+  <!-- SVG Skyline -->
+  <svg class="skyline-svg" viewBox="0 0 1440 280" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMax meet">
+    <defs>
+      <linearGradient id="skyG" x1="0%" y1="0%" x2="0%" y2="100%">
+        <stop offset="0%" stop-color="#00D4FF" stop-opacity="0.45"/>
+        <stop offset="100%" stop-color="#030508" stop-opacity="1"/>
+      </linearGradient>
+      <filter id="glow"><feGaussianBlur stdDeviation="2.5" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+    </defs>
+    <!-- Background buildings -->
+    <g opacity="0.22" fill="#162040">
+      <rect x="0" y="190" width="55" height="90"/><rect x="65" y="150" width="75" height="130"/>
+      <rect x="150" y="110" width="45" height="170"/><rect x="205" y="165" width="65" height="115"/>
+      <rect x="280" y="90" width="42" height="190"/><rect x="332" y="130" width="85" height="150"/>
+      <rect x="430" y="70" width="50" height="210"/><rect x="490" y="150" width="75" height="130"/>
+      <rect x="578" y="100" width="48" height="180"/><rect x="636" y="55" width="68" height="225"/>
+      <rect x="715" y="120" width="58" height="160"/><rect x="785" y="75" width="75" height="205"/>
+      <rect x="872" y="140" width="52" height="140"/><rect x="936" y="95" width="65" height="185"/>
+      <rect x="1014" y="65" width="85" height="215"/><rect x="1112" y="105" width="48" height="175"/>
+      <rect x="1173" y="45" width="78" height="235"/><rect x="1265" y="130" width="58" height="150"/>
+      <rect x="1336" y="85" width="60" height="195"/>
+    </g>
+    <!-- Foreground neon buildings -->
+    <g filter="url(#glow)">
+      <rect x="50"   y="200" width="38"  height="80"  fill="url(#skyG)" opacity=".6"/>
+      <rect x="100"  y="160" width="55"  height="120" fill="url(#skyG)" opacity=".5"/>
+      <rect x="200"  y="125" width="32"  height="155" fill="url(#skyG)" opacity=".7"/>
+      <rect x="400"  y="95"  width="50"  height="185" fill="url(#skyG)" opacity=".6"/>
+      <rect x="500"  y="75"  width="42"  height="205" fill="url(#skyG)" opacity=".8"/>
+      <rect x="620"  y="105" width="48"  height="175" fill="url(#skyG)" opacity=".5"/>
+      <rect x="700"  y="65"  width="62"  height="215" fill="url(#skyG)" opacity=".75"/>
+      <rect x="800"  y="45"  width="68"  height="235" fill="url(#skyG)" opacity=".9"/>
+      <rect x="910"  y="115" width="42"  height="165" fill="url(#skyG)" opacity=".5"/>
+      <rect x="1010" y="58"  width="76"  height="222" fill="url(#skyG)" opacity=".8"/>
+      <rect x="1110" y="85"  width="52"  height="195" fill="url(#skyG)" opacity=".6"/>
+      <rect x="1200" y="30"  width="72"  height="250" fill="url(#skyG)" opacity=".9"/>
+      <rect x="1330" y="105" width="48"  height="175" fill="url(#skyG)" opacity=".5"/>
+    </g>
+    <!-- Ground glow line -->
+    <line x1="0" y1="279" x2="1440" y2="279" stroke="#00D4FF" stroke-width="1" opacity=".45" style="filter:drop-shadow(0 0 6px #00D4FF)"/>
+    <!-- Crane -->
+    <g opacity=".45" stroke="#00D4FF" stroke-width="1.5" fill="none">
+      <line x1="820" y1="280" x2="820" y2="5"/>
+      <line x1="820" y1="22" x2="1060" y2="22"/>
+      <line x1="820" y1="22" x2="695" y2="75"/>
+      <line x1="1050" y1="22" x2="1050" y2="80" stroke-dasharray="4 3"/>
+      <circle cx="1050" cy="84" r="4" fill="#FF6B00"/>
+    </g>
+  </svg>
+
+  <!-- Scroll hint -->
+  <div class="hero-scroll">
+    <span>Scroll</span>
+    <div class="hero-scroll-line"></div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- ═══════════════════════════════════════════════════════════
+     ABOUT
+════════════════════════════════════════════════════════════ -->
+<section id="about">
+  <!-- Glow -->
+  <div style="position:absolute;top:0;right:0;width:360px;height:360px;border-radius:50%;background:radial-gradient(circle,rgba(0,212,255,.04),transparent 70%);transform:translate(30%,-30%);pointer-events:none;"></div>
+
+  <div class="container">
+
+    <!-- Intro -->
+    <div class="about-intro">
+      <div class="about-text reveal">
+        <div class="section-label">About SCL</div>
+        <h2>ENGINEERED FOR <span class="neon-text">EXCELLENCE</span></h2>
+        <p>SCL Contracts Pvt. Ltd. is a fully owned subsidiary of <strong>Siddhika Coatings Limited</strong> — India's largest single-brand texture paint contract company, listed on the NSE SME segment. With over 20 years of history in architectural coatings and construction, our group brings deep expertise to every project.</p>
+        <p>Our business philosophy always revolved around <strong>customer satisfaction and retention</strong>. SCL Contracts provides a satisfying experience combining the best services and products — from facade renovation and waterproofing to design-build and structural retrofitting.</p>
+        <p>We are the authorised marketing partner for <strong>SK Kaken Ltd. (SKK), Japan</strong>, with over 20 years of association. Almost <strong>60% of our business comes from repeat clients</strong> — a testament to the trust we have built.</p>
+      </div>
+      <div class="about-badges reveal" data-delay="1">
+        <div class="about-badge-card glass">
+          <div class="about-badge-icon">📈</div>
+          <div class="about-badge-title">NSE SME Listed</div>
+          <div class="about-badge-sub">Siddhika Coatings Ltd</div>
+        </div>
+        <div class="about-badge-card glass">
+          <div class="about-badge-icon">🌍</div>
+          <div class="about-badge-title">Pan-India Network</div>
+          <div class="about-badge-sub">6 Offices · Delhi to Chennai</div>
+        </div>
+        <div class="about-badge-card glass">
+          <div class="about-badge-icon">🇯🇵</div>
+          <div class="about-badge-title">SKK Japan Partner</div>
+          <div class="about-badge-sub">20+ Years Association</div>
+        </div>
+        <div class="about-badge-card glass">
+          <div class="about-badge-icon">🔁</div>
+          <div class="about-badge-title">60% Repeat Clients</div>
+          <div class="about-badge-sub">Customer Retention Focus</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Stats -->
+    <div class="stats-grid">
+      <div class="stat-card glass reveal" data-delay="0">
+        <div class="stat-card-top" style="background:linear-gradient(90deg,transparent,#00D4FF,transparent);"></div>
+        <div class="stat-num" style="color:#00D4FF;text-shadow:0 0 20px rgba(0,212,255,.4);">
+          <span data-count="20" data-suffix="+">0+</span>
+        </div>
+        <div class="stat-label">Years of History</div>
+      </div>
+      <div class="stat-card glass reveal" data-delay="1">
+        <div class="stat-card-top" style="background:linear-gradient(90deg,transparent,#FF6B00,transparent);"></div>
+        <div class="stat-num" style="color:#FF6B00;text-shadow:0 0 20px rgba(255,107,0,.4);">
+          <span data-count="5" data-suffix="M+">0M+</span>
+        </div>
+        <div class="stat-label">Sq.ft Delivered / Year</div>
+      </div>
+      <div class="stat-card glass reveal" data-delay="2">
+        <div class="stat-card-top" style="background:linear-gradient(90deg,transparent,#00FFE0,transparent);"></div>
+        <div class="stat-num" style="color:#00FFE0;text-shadow:0 0 20px rgba(0,255,224,.4);">
+          <span data-count="6" data-suffix="">0</span>
+        </div>
+        <div class="stat-label">Offices Across India</div>
+      </div>
+      <div class="stat-card glass reveal" data-delay="3">
+        <div class="stat-card-top" style="background:linear-gradient(90deg,transparent,#B060FF,transparent);"></div>
+        <div class="stat-num" style="color:#B060FF;text-shadow:0 0 20px rgba(176,96,255,.4);">
+          <span data-count="100" data-suffix="+">0+</span>
+        </div>
+        <div class="stat-label">Skilled Professionals</div>
+      </div>
+    </div>
+
+    <div class="divider" style="margin-bottom:72px;"></div>
+
+    <!-- Timeline -->
+    <div class="timeline-header reveal">
+      <div class="section-label">Our Journey</div>
+      <h3>TWO DECADES OF <span class="orange-text">MILESTONES</span></h3>
+    </div>
+    <div class="timeline-grid" id="timeline-grid"></div>
+
+    <div class="divider" style="margin:0 0 72px;"></div>
+
+    <!-- Directors -->
+    <div id="directors" class="directors-header reveal">
+      <div class="section-label">Leadership</div>
+      <h3>MEET OUR <span class="neon-text">DIRECTORS</span></h3>
+      <p>SCL Contracts is guided by the board of its parent company, Siddhika Coatings Limited — experienced professionals who built India's largest single-brand paint contracting enterprise from the ground up.</p>
+    </div>
+    <div class="directors-grid" id="directors-grid"></div>
+    <div class="directors-grid-2" id="directors-grid-2" style="margin-top:20px;"></div>
+
+    <!-- Registration info -->
+    <div class="about-reg glass reveal" style="margin-top:28px;">
+      <div style="font-size:2rem;">🏆</div>
+      <p><strong>Registered Office:</strong> L-9, Lower Ground Floor, Kalkaji, New Delhi – 110019 &nbsp;·&nbsp; <strong>Listed:</strong> NSE SME Segment &nbsp;·&nbsp; CIN: L45400DL2010PLC206024</p>
+    </div>
+
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- ═══════════════════════════════════════════════════════════
+     SERVICES
+════════════════════════════════════════════════════════════ -->
+<section id="services">
+  <!-- Glow -->
+  <div style="position:absolute;bottom:0;left:0;width:360px;height:360px;border-radius:50%;background:radial-gradient(circle,rgba(255,107,0,.05),transparent 70%);transform:translate(-30%,30%);pointer-events:none;"></div>
+
+  <div class="container">
+    <div class="services-header reveal">
+      <div class="section-label" style="justify-content:center;">What We Build</div>
+      <h2>OUR <span class="neon-text">SERVICE</span> LINES</h2>
+      <p>Six specialised divisions operating with precision and purpose — from demolition to construction management.</p>
+    </div>
+
+    <div class="services-grid" id="services-grid"></div>
+
+    <!-- CTA bar -->
+    <div class="services-cta glass reveal" style="margin-top:36px;">
+      <div>
+        <h3>Not sure which service fits your project?</h3>
+        <p>Our consultants analyse your requirements and recommend the optimal delivery model.</p>
+      </div>
+      <button class="btn-primary" data-scroll="contact" style="flex-shrink:0;">Free Site Visit</button>
+    </div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- ═══════════════════════════════════════════════════════════
+     PROJECTS
+════════════════════════════════════════════════════════════ -->
+<section id="projects">
+  <div class="container">
+    <div class="projects-header reveal">
+      <div class="section-label" style="justify-content:center;">Our Work</div>
+      <h2>FEATURED <span class="orange-text">PROJECTS</span></h2>
+      <p>A cross-section of landmark projects aligned with our real service lines across India.</p>
+    </div>
+
+    <!-- Filters -->
+    <div class="filters reveal">
+      <button class="filter-btn active" data-filter="all">All Projects</button>
+      <button class="filter-btn" data-filter="facade">Facade</button>
+      <button class="filter-btn" data-filter="waterproofing">Waterproofing</button>
+      <button class="filter-btn" data-filter="design-build">Design-Build</button>
+      <button class="filter-btn" data-filter="retrofitting">Retrofitting</button>
+      <button class="filter-btn" data-filter="flooring">Flooring</button>
+      <button class="filter-btn" data-filter="roofing">Roofing</button>
+    </div>
+
+    <div class="projects-grid" id="projects-grid"></div>
+  </div>
+</section>
+
+<!-- Project Modal -->
+<div id="modal" class="modal-overlay" role="dialog" aria-modal="true">
+  <div class="modal-box glass">
+    <div class="modal-img">
+      <img id="modal-img" src="" alt="Project" />
+      <div class="modal-img-overlay"></div>
+      <button class="modal-close" id="modal-close" aria-label="Close">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 6 6 18M6 6l12 12"/></svg>
+      </button>
+      <div class="modal-status" id="modal-status"></div>
+    </div>
+    <div class="modal-body">
+      <div class="modal-tags" id="modal-tags"></div>
+      <h2 class="modal-title" id="modal-title"></h2>
+      <p class="modal-desc" id="modal-desc"></p>
+      <div class="modal-meta" id="modal-meta"></div>
+      <button class="btn-primary" data-scroll="contact" style="width:100%;justify-content:center;" onclick="document.getElementById('modal').classList.remove('open');document.body.style.overflow='';">
+        Enquire About Similar Projects
+      </button>
+    </div>
+  </div>
+</div>
+
+<div class="divider"></div>
+
+<!-- ═══════════════════════════════════════════════════════════
+     SMART ESTIMATOR
+════════════════════════════════════════════════════════════ -->
+<section id="estimator">
+  <div style="position:absolute;top:0;left:0;right:0;height:1px;background:linear-gradient(90deg,transparent,rgba(255,107,0,.4),transparent);"></div>
+  <div class="container">
+    <div class="estimator-header reveal">
+      <div class="section-label" style="justify-content:center;">Smart Estimator</div>
+      <h2>INSTANT COST <span class="orange-text">ESTIMATE</span></h2>
+      <p>Get a ballpark construction budget instantly. Based on current market rates — detailed BOQ available on request.</p>
+    </div>
+
+    <div class="estimator-grid">
+      <!-- Inputs -->
+      <div class="est-panel glass reveal-left">
+        <div class="est-panel-title">Project Parameters</div>
+
+        <!-- Type -->
+        <div class="est-field">
+          <label class="est-field-label">Project Type</label>
+          <div class="toggle-group">
+            <button class="toggle-btn active-blue" data-est-type="residential">Residential</button>
+            <button class="toggle-btn" data-est-type="commercial">Commercial</button>
+            <button class="toggle-btn" data-est-type="industrial">Industrial</button>
+            <button class="toggle-btn" data-est-type="institutional">Institutional</button>
+          </div>
+        </div>
+
+        <!-- Tier -->
+        <div class="est-field">
+          <label class="est-field-label">City Tier</label>
+          <div class="toggle-group">
+            <button class="toggle-btn active-orange" data-est-tier="metro">Metro</button>
+            <button class="toggle-btn" data-est-tier="tier2">Tier-2</button>
+            <button class="toggle-btn" data-est-tier="tier3">Tier-3</button>
+          </div>
+        </div>
+
+        <!-- Spec -->
+        <div class="est-field">
+          <label class="est-field-label">Specification Level</label>
+          <div class="toggle-group">
+            <button class="toggle-btn active-purple" data-est-spec="standard">Standard</button>
+            <button class="toggle-btn" data-est-spec="premium">Premium</button>
+            <button class="toggle-btn" data-est-spec="luxury">Luxury</button>
+          </div>
+        </div>
+
+        <!-- Area -->
+        <div class="est-field">
+          <div class="range-header">
+            <label class="est-field-label" style="margin:0;">Built-up Area</label>
+            <span class="range-val" id="area-display">5,000 sq.ft</span>
+          </div>
+          <input type="range" id="area-slider" min="500" max="500000" step="500" value="5000" />
+          <div class="range-limits"><span>500 sq.ft</span><span>5,00,000 sq.ft</span></div>
+        </div>
+
+        <!-- Floors -->
+        <div class="est-field">
+          <div class="range-header">
+            <label class="est-field-label" style="margin:0;">No. of Floors</label>
+            <span class="range-val" id="floors-display">1</span>
+          </div>
+          <input type="range" id="floors-slider" min="1" max="50" step="1" value="1" />
+          <div class="range-limits"><span>1 floor</span><span>50 floors</span></div>
+        </div>
+      </div>
+
+      <!-- Output -->
+      <div class="est-panel glass reveal-right" style="border-color:rgba(0,212,255,.1);display:flex;flex-direction:column;justify-content:space-between;">
+        <div>
+          <div class="est-panel-title">Estimate Summary</div>
+
+          <div class="est-total-box" style="background:rgba(0,212,255,.05);border:1px solid rgba(0,212,255,.1);">
+            <div class="est-total-label">Estimated Total Cost</div>
+            <div class="est-total-val" id="est-total">₹0</div>
+            <div class="est-rate" id="est-rate">≈ ₹0 / sq.ft</div>
+          </div>
+
+          <div class="est-breakdown">
+            <div class="est-row">
+              <span class="est-row-label">Foundation & Sub-structure</span>
+              <span class="est-row-val" id="est-fnd" style="color:#00FFE0;">₹0</span>
+            </div>
+            <div class="est-row">
+              <span class="est-row-label">Structure & Frame</span>
+              <span class="est-row-val" id="est-str" style="color:#00D4FF;">₹0</span>
+            </div>
+            <div class="est-row">
+              <span class="est-row-label">Finishing & Facade</span>
+              <span class="est-row-val" id="est-fin" style="color:#B060FF;">₹0</span>
+            </div>
+            <div class="est-row">
+              <span class="est-row-label">MEP Services</span>
+              <span class="est-row-val" id="est-mep" style="color:#FF6B00;">₹0</span>
+            </div>
+          </div>
+
+          <p class="est-disclaimer">* Indicative estimate only. Actual costs vary with site conditions, design complexity and material specifications. GST excluded.</p>
+        </div>
+
+        <button class="btn-primary" data-scroll="contact" style="width:100%;justify-content:center;">
+          Get Detailed BOQ
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 2 11 13M22 2l-7 20-4-9-9-4 20-7z"/></svg>
+        </button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- ═══════════════════════════════════════════════════════════
+     CONTACT
+════════════════════════════════════════════════════════════ -->
+<section id="contact">
+  <div style="position:absolute;top:0;right:0;width:360px;height:360px;border-radius:50%;background:radial-gradient(circle,rgba(0,212,255,.04),transparent 70%);transform:translate(30%,-20%);pointer-events:none;"></div>
+  <div class="container">
+
+    <div class="contact-header reveal">
+      <div class="section-label" style="justify-content:center;">Get In Touch</div>
+      <h2>BOOK A FREE <span class="neon-text">SITE VISIT</span></h2>
+      <p>Expert consultation at no cost. Our team will arrange a free site visit at your convenience.</p>
+    </div>
+
+    <!-- Top cards -->
+    <div class="contact-top-cards reveal">
+      <a href="tel:+919810021809" class="contact-card glass" style="cursor:none;">
+        <div class="contact-card-icon" style="background:rgba(0,212,255,.08);border:1px solid rgba(0,212,255,.2);">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#00D4FF" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.8 19.79 19.79 0 01.01 1.18 2 2 0 012 0h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+        </div>
+        <div>
+          <div class="contact-card-label">Call Us</div>
+          <div class="contact-card-val">+91-9810021809</div>
+          <div class="contact-card-sub">011-4160-1441 (Delhi HQ)</div>
+        </div>
+      </a>
+      <a href="/cdn-cgi/l/email-protection#31585f575e7142525d525e5f4543505245421f525e5c" class="contact-card glass" style="cursor:none;">
+        <div class="contact-card-icon" style="background:rgba(0,212,255,.08);border:1px solid rgba(0,212,255,.2);">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#00D4FF" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+        </div>
+        <div>
+          <div class="contact-card-label">Email Us</div>
+          <div class="contact-card-val"><span class="__cf_email__" data-cfemail="b2dbdcd4ddf2c1d1ded1dddcc6c0d3d1c6c19cd1dddf">[email&#160;protected]</span></div>
+          <div class="contact-card-sub">Response within 2 business hours</div>
+        </div>
+      </a>
+      <div class="contact-card glass">
+        <div class="contact-card-icon" style="background:rgba(0,212,255,.08);border:1px solid rgba(0,212,255,.2);">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#00D4FF" stroke-width="2"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z"/><circle cx="12" cy="9" r="2.5"/></svg>
+        </div>
+        <div>
+          <div class="contact-card-label">Head Office</div>
+          <div class="contact-card-val">L-9, LGF, Kalkaji</div>
+          <div class="contact-card-sub">New Delhi — 110019</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Main grid -->
+    <div class="contact-grid">
+      <!-- Left: offices + map -->
+      <div class="reveal-left">
+        <div class="offices-title">Our 6 Offices</div>
+        <div class="offices-list" id="offices-list"></div>
+
+        <!-- Map -->
+        <div class="map-container glass" style="background:var(--bg-800);">
+          <div class="map-grid-bg"></div>
+          <svg style="position:absolute;inset:0;width:100%;height:100%;" viewBox="0 0 400 240">
+            <g stroke="rgba(0,212,255,.1)" stroke-width="2" fill="none">
+              <line x1="0" y1="120" x2="400" y2="120"/><line x1="200" y1="0" x2="200" y2="240"/>
+              <line x1="0" y1="60" x2="400" y2="60"/><line x1="0" y1="180" x2="400" y2="180"/>
+              <line x1="100" y1="0" x2="100" y2="240"/><line x1="300" y1="0" x2="300" y2="240"/>
+            </g>
+            <!-- City pins -->
+            <g>
+              <!-- Delhi -->
+              <circle cx="155" cy="65" r="7" fill="#00D4FF" opacity=".85"/>
+              <circle cx="155" cy="65" r="14" fill="#00D4FF" opacity=".1"><animate attributeName="r" from="8" to="22" dur="2.5s" repeatCount="indefinite"/><animate attributeName="opacity" from=".15" to="0" dur="2.5s" repeatCount="indefinite"/></circle>
+              <text x="168" y="69" fill="#00D4FF" font-size="9" font-family="monospace" opacity=".8">Delhi</text>
+              <!-- Mumbai -->
+              <circle cx="102" cy="152" r="5" fill="#FF6B00" opacity=".85"/>
+              <circle cx="102" cy="152" r="12" fill="#FF6B00" opacity=".1"><animate attributeName="r" from="6" to="18" dur="2.8s" repeatCount="indefinite"/><animate attributeName="opacity" from=".15" to="0" dur="2.8s" repeatCount="indefinite"/></circle>
+              <text x="115" y="156" fill="#FF6B00" font-size="9" font-family="monospace" opacity=".8">Mumbai</text>
+              <!-- Kolkata -->
+              <circle cx="295" cy="105" r="5" fill="#FFA020" opacity=".85"/>
+              <text x="308" y="109" fill="#FFA020" font-size="9" font-family="monospace" opacity=".8">Kolkata</text>
+              <!-- Hyderabad -->
+              <circle cx="215" cy="168" r="5" fill="#00FFE0" opacity=".85"/>
+              <text x="226" y="172" fill="#00FFE0" font-size="9" font-family="monospace" opacity=".8">Hyd</text>
+              <!-- Bengaluru -->
+              <circle cx="200" cy="195" r="5" fill="#40D080" opacity=".85"/>
+              <text x="212" y="199" fill="#40D080" font-size="9" font-family="monospace" opacity=".8">Blr</text>
+              <!-- Chennai -->
+              <circle cx="230" cy="215" r="5" fill="#B060FF" opacity=".85"/>
+              <text x="242" y="219" fill="#B060FF" font-size="9" font-family="monospace" opacity=".8">Chennai</text>
+            </g>
+          </svg>
+          <div class="map-label">Pan-India · 6 Offices</div>
+          <div style="position:absolute;left:0;right:0;height:1px;background:linear-gradient(90deg,transparent,rgba(0,212,255,.3),transparent);animation:scanLine 4s linear infinite;"></div>
+        </div>
+      </div>
+
+      <!-- Right: form -->
+      <div class="reveal-right">
+        <div class="form-box glass" id="form-wrapper">
+          <div class="form-title">Book A Free Site Visit</div>
+
+          <!-- Success state -->
+          <div class="form-success" id="form-success">
+            <div class="form-success-icon">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#4ade80" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+            </div>
+            <h3>Request Received!</h3>
+            <p>Our team will contact you within 2 business hours to schedule your free site visit.</p>
+            <button class="btn-primary" id="form-reset">Submit Another Request</button>
+          </div>
+
+          <!-- Form -->
+          <form id="contact-form" novalidate>
+            <div class="form-row">
+              <div class="form-field">
+                <label class="form-label" for="fname">Full Name *</label>
+                <input class="form-input" id="fname" name="name" type="text" placeholder="Your full name" />
+                <div class="form-error" data-err="name"></div>
+              </div>
+              <div class="form-field">
+                <label class="form-label" for="femail">Email Address *</label>
+                <input class="form-input" id="femail" name="email" type="email" placeholder="you@company.com" />
+                <div class="form-error" data-err="email"></div>
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-field">
+                <label class="form-label" for="fphone">Mobile Number</label>
+                <input class="form-input" id="fphone" name="phone" type="tel" placeholder="+91 98765 43210" />
+                <div class="form-error" data-err="phone"></div>
+              </div>
+              <div class="form-field">
+                <label class="form-label" for="fpin">PIN Code</label>
+                <input class="form-input" id="fpin" name="pincode" type="text" placeholder="110019" />
+              </div>
+            </div>
+            <div class="form-field">
+              <label class="form-label" for="fservice">Select Service</label>
+              <select class="form-select" id="fservice" name="service">
+                <option value="">Select a service…</option>
+                <option>Specialty Services</option>
+                <option>Design-Build Services</option>
+                <option>Renovations &amp; Facade Works</option>
+                <option>Specialized Flooring</option>
+                <option>Acoustic Design &amp; Soundproofing</option>
+                <option>Sustainable Construction / Retrofitting</option>
+                <option>Roofing Systems</option>
+                <option>Fire Protection &amp; Plumbing</option>
+                <option>Waterproofing Systems</option>
+                <option>Construction Management</option>
+              </select>
+            </div>
+            <div class="form-field">
+              <label class="form-label" for="fmsg">Message *</label>
+              <textarea class="form-textarea" id="fmsg" name="message" rows="4" placeholder="Briefly describe your project — location, scope, timeline…"></textarea>
+              <div class="form-error" data-err="message"></div>
+            </div>
+            <button type="submit" class="btn-primary" style="width:100%;justify-content:center;">
+              Book Free Site Visit
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 2 11 13M22 2l-7 20-4-9-9-4 20-7z"/></svg>
+            </button>
+            <p class="form-hint">
+              WhatsApp: <a href="https://api.whatsapp.com/send?phone=+919810021809" target="_blank" style="color:rgba(0,212,255,.5);">+91-9810021809 ↗</a>
+            </p>
+          </form>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════════════
+     FOOTER
+════════════════════════════════════════════════════════════ -->
+<footer id="footer">
+  <div class="grid-bg" style="position:absolute;inset:0;opacity:.08;pointer-events:none;"></div>
+  <div style="position:absolute;top:0;left:50%;transform:translateX(-50%);width:300px;height:1px;background:linear-gradient(90deg,transparent,#00D4FF,transparent);"></div>
+
+  <div class="container">
+    <div class="footer-grid">
+      <!-- Brand -->
+      <div>
+        <div class="nav-logo" style="margin-bottom:14px;cursor:default;">
+          <div class="nav-logo-mark">
+            <div class="diamond"></div>
+            <div class="inner"></div>
+            <div class="letters">SCL</div>
+          </div>
+          <div class="nav-logo-text">
+            <div class="t1">CONTRACTS</div>
+            <div class="t2">PVT LTD</div>
+          </div>
+        </div>
+        <p class="footer-brand-text">A fully owned subsidiary of Siddhika Coatings Limited — India's largest single-brand texture paint contractor.</p>
+        <p class="footer-listed">NSE SME Listed · CIN: L45400DL2010PLC206024</p>
+        <div class="footer-socials">
+          <a href="https://api.whatsapp.com/send?phone=+919810021809" target="_blank" rel="noreferrer" class="social-icon" title="WhatsApp">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+          </a>
+          <a href="https://www.instagram.com/" target="_blank" rel="noreferrer" class="social-icon" title="Instagram">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+          </a>
+          <a href="https://www.linkedin.com/company/siddhika-coatings-ltd/" target="_blank" rel="noreferrer" class="social-icon" title="LinkedIn">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"/><circle cx="4" cy="4" r="2"/></svg>
+          </a>
+        </div>
+      </div>
+
+      <!-- Company links -->
+      <div>
+        <div class="footer-col-title">Company</div>
+        <ul class="footer-links">
+          <li><button data-scroll="about">About Us</button></li>
+          <li><button data-scroll="directors">Directors</button></li>
+          <li><button data-scroll="services">Services</button></li>
+          <li><button data-scroll="projects">Projects</button></li>
+        </ul>
+      </div>
+
+      <!-- Services links -->
+      <div>
+        <div class="footer-col-title">Services</div>
+        <ul class="footer-links">
+          <li><button data-scroll="services">Specialty Services</button></li>
+          <li><button data-scroll="services">Design-Build</button></li>
+          <li><button data-scroll="services">Facade Works</button></li>
+          <li><button data-scroll="services">Waterproofing</button></li>
+          <li><button data-scroll="services">Roofing Systems</button></li>
+          <li><button data-scroll="services">Retrofitting</button></li>
+        </ul>
+      </div>
+
+      <!-- Resources -->
+      <div>
+        <div class="footer-col-title">Resources</div>
+        <ul class="footer-links">
+          <li><button data-scroll="estimator">Smart Estimator</button></li>
+          <li><button data-scroll="contact">Book Site Visit</button></li>
+          <li><button data-scroll="contact">Contact Us</button></li>
+          <li><a href="https://sclcontracts.com" target="_blank" rel="noreferrer">sclcontracts.com ↗</a></li>
+          <li><a href="https://siddhika.com" target="_blank" rel="noreferrer">siddhika.com ↗</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Offices strip -->
+    <div class="footer-offices-strip">
+      <div class="footer-offices-label">Office Locations</div>
+      <div class="footer-offices-badges">
+        <span class="badge">New Delhi (HQ)</span>
+        <span class="badge">Mumbai</span>
+        <span class="badge">Kolkata</span>
+        <span class="badge">Hyderabad</span>
+        <span class="badge">Bengaluru</span>
+        <span class="badge">Chennai</span>
+      </div>
+    </div>
+
+    <!-- Bottom bar -->
+    <div class="footer-bottom">
+      <div class="footer-copy">© <span id="footer-year"></span> SCL Contracts Pvt. Ltd. All Rights Reserved.</div>
+      <div class="footer-links-inline">
+        <a href="#">Privacy Policy</a>
+        <a href="#">Terms of Use</a>
+      </div>
+    </div>
+
+    <!-- Back to top -->
+    <button class="back-to-top" data-scroll="hero">
+      <span>Back to top</span>
+      <div class="back-to-top-btn">
+        <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 19V5M5 12l7-7 7 7"/></svg>
+      </div>
+    </button>
+  </div>
+</footer>
+
+<!-- ═══════════════════════════════════════════════════════════
+     CHATBOT
+════════════════════════════════════════════════════════════ -->
+<!-- Toggle button -->
+<button class="chat-toggle" id="chat-toggle" aria-label="Open chat">
+  <div class="chat-ping"></div>
+  <svg id="chat-icon-open" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z"/></svg>
+  <svg id="chat-icon-close" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="display:none;"><path d="M18 6 6 18M6 6l12 12"/></svg>
+  <div class="chat-badge" id="chat-badge" style="display:none;">1</div>
+</button>
+
+<!-- Chat window -->
+<div class="chat-window" id="chat-window">
+  <div class="chat-header">
+    <div class="chat-avatar">AI</div>
+    <div>
+      <div class="chat-header-name">ARIA</div>
+      <div class="chat-header-status">
+        <div class="chat-online-dot"></div>
+        <span class="chat-header-sub">SCL AI Assistant · Online</span>
+      </div>
+    </div>
+    <button class="chat-clear" id="chat-clear">Clear</button>
+  </div>
+
+  <div class="chat-messages" id="chat-messages"></div>
+
+  <div class="chat-quick">
+    <button class="quick-btn">Services</button>
+    <button class="quick-btn">Our offices</button>
+    <button class="quick-btn">Contact details</button>
+    <button class="quick-btn">Directors</button>
+    <button class="quick-btn">Site visit</button>
+  </div>
+
+  <div class="chat-input-row">
+    <input class="chat-input" id="chat-input" type="text" placeholder="Type a message…" autocomplete="off" />
+    <button class="chat-send" id="chat-send" disabled>
+      <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 2 11 13M22 2l-7 20-4-9-9-4 20-7z"/></svg>
+    </button>
+  </div>
+  <div class="chat-powered">Powered by SCL AI · Rule-based FAQ Engine</div>
+</div>
+
+<!-- ── Toggle chat icon swap ── -->
+<script>
+  document.getElementById('chat-toggle').addEventListener('click',function(){
+    const o=document.getElementById('chat-icon-open');
+    const c=document.getElementById('chat-icon-close');
+    if(o.style.displa
